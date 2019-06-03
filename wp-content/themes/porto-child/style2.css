@@ -1,0 +1,279 @@
+/*
+Theme Name: Porto Child
+Theme URI: http://newsmartwave.net/wordpress/porto
+Author: SW-THEMES
+Author URI: http://newsmartwave.net/
+Description: Porto Responsive Wordpress + eCommerce Theme.
+Version: 1.1
+Template: porto
+License: Commercial
+License URI: http://themeforest.net/licenses/regular_extended
+Tags: woocommerce, corporate, ecommerce, responsive, blue, black, green, white, light, dark, red, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: porto-child
+
+*/
+
+@import url("../porto/style.css");
+
+/*************** ADD YOUR CUSTOM CSS HERE  ***************/
+
+/*.wpb_wrapper{
+		background: red;
+}*/
+
+@media (min-width: 992px){
+#header {
+    margin: 0px 0px 0px 0px !important;
+}
+}
+
+.mega-menu > li.menu-item.active > a, .mega-menu > li.menu-item:hover > a, .mega-menu > li.menu-item.active > h5, .mega-menu > li.menu-item:hover > h5{
+	background: transparent !important;
+	color : #e04622 !important;
+}
+
+.d-woo .rating-wrap{
+	display : none !important;
+}
+
+.m-b-none .zoom{
+	display : none !important;
+}
+
+.m-b-none .post-date{
+	display : none !important;
+}
+
+.m-b-none .post-item{
+	border-left: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+}
+
+.m-b-none .m-b-md {
+    margin-bottom: 10px !important;
+}
+
+.m-b-none a {
+	text-decoration: none !important;
+}
+
+.m-b-none .read-more{
+	display : none !important;
+}
+
+.m-b-none h4{
+	 margin-left: 20px;
+    	margin-right: 20px;
+    	margin-bottom: 0px;
+    	border-bottom: 1px solid #ebebeb;
+    	padding-top: 1px;
+    	padding-bottom: 11px
+}
+
+.m-b-none .author-name{
+	padding-top: 5px;
+	margin-left: 20px;
+    	margin-right: 20px;
+    	padding-bottom : 10px;
+    	margin-bottom : 0px;
+    	border-bottom : 1px solid #ebebeb;
+    	
+}
+
+.m-b-none p {
+	margin-left: 20px;
+    	margin-right: 20px;
+    	padding-top: 9px;
+    	margin-bottom: 12px;
+}
+
+.d-woo{
+	background : #eff2f6 !important;
+}
+
+.d-woo:hover{
+	box-shadow: 0px 20px 20px rgba(0,0,0,0.35);
+}
+
+.d-woo:hover .add-links-wrap{
+	background: #e04622 !important;
+}
+
+.d-woo h2{
+	font-size: 22px !important;
+    	font-weight: 500 !important;
+}
+
+.d-woo .quickview{
+	display : none !important;
+}
+
+.d-woo .add-links-wrap{
+	background : #282828 !important;
+    	padding: 15px 0;
+    	color : white;
+}
+
+.d-woo .add-links-wrap a {
+	color : white;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.d-woo .product_type_simple{
+	color: #fff !important;
+	border : none !important;
+}
+
+.d-woo .add-links {
+	margin-bottom : 0 !important;
+	margin-top : 10px;
+}
+
+.d-woo .add_to_cart_read_more:hover{
+	background-color: transparent !important;	
+}
+
+.add_to_cart_button:hover, .add_to_cart_read_more:hover, .add_to_cart_button:focus, .add_to_cart_read_more:focus, ul.products li.product:hover .add_to_cart_button, ul.products li.product:hover .add_to_cart_read_more, ul.list li.product .add_to_cart_button, ul.list li.product .add_to_cart_read_more{
+	background-color: transparent !important;	
+}
+
+.image-d{
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 20px 30px;
+}
+
+.image-d::before, .image-d::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #ff6c6c;
+}
+
+.image-d .wpb_wrapper::before, .image-d .wpb_wrapper::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #ff6c6c;
+}
+.d-row-icon:hover .image-d::before, .d-row-icon:hover .image-d::after{
+  width: 100%;
+}
+.d-row-icon:hover .wpb_wrapper::before, .d-row-icon:hover .image-d .wpb_wrapper::after{
+  height: 100%;
+}
+
+.image-d::after{
+  left:0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.image-d .wpb_wrapper::after{
+  right:0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.image-d::before{
+  right: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.image-d .wpb_wrapper::before{
+  left: 0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+
+.post-image{
+	position: relative;
+}
+
+.city_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(to right,rgba(72,127,238,0.65),rgba(50,250,149,0.65)); */
+    background : #fe6b6b !important;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
+}
+
+.post-slide:hover .city_overlay {
+    visibility: visible;
+    opacity: 0.6;
+}
+
+.city_overlay h3{
+	text-align: center;
+   	 margin-top: 65px;
+    	color: white;
+}
+
+/* css hotline */
+
+.hotline {
+    position: fixed;
+    left: 10px;
+    z-index: 9000;
+    display: block;
+    background: #e04622;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 99px;
+}
+
+.hotline1 {
+    bottom: 8px;
+}
+
+.hotline .hotline-number {
+    font-size: 20px;
+    color: #fec901;
+    font-weight: bold;
+}
+
+.vietin{
+	margin-top : 79px;
+}
+
+.logobank{
+	margin-top : 28px;
+}
+
+.donga{
+	margin-top : 13px;
+}
+
+.woocommerce-Price-amount{
+	display : none;
+}
+
+.cart{
+	display : none;
+}
+
+#header.sticky-header .header-main.sticky {
+	height: 109px;
+    	top: -26px !important;
+    	transition: 1s;
+}
